@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details - Konkan Krishi Vikas Pratishthani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/store.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <span>Fresh arrivals every week</span>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">🌿</span>
+        <span>Konkan Krishi Vikas Pratishthani</span>
+      </a>
+      <nav class="header-nav">
+        <a href="featured-products.html">Featured</a>
+        <a href="product-details.html" class="active">Product</a>
+        <a href="cart.html">Cart</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-pill" href="wishlist.html">♡</a>
+        <a class="icon-pill" href="cart.html">🛒 2</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <h1 class="page-title">Product Details</h1>
+      <p class="page-subtitle">Explore plant care, styling, and delivery details before you buy.</p>
+
+      <section class="product-detail">
+        <div class="product-gallery">
+          <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80" alt="Product" />
+        </div>
+        <div class="detail-card">
+          <span class="badge">Premium Pot Included</span>
+          <h2>Calathea Plant</h2>
+          <p>Elegant striped leaves that brighten your bedroom, office, or lounge with calm energy.</p>
+          <div class="price-row" style="margin: 16px 0;">
+            <span class="price-tag">₹1,599</span>
+            <span>⭐ 4.9 (128 reviews)</span>
+          </div>
+          <div class="qty-row">
+            <button class="minus" data-qty="qtyValue">−</button>
+            <span id="qtyValue">1</span>
+            <button data-qty="qtyValue">+</button>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="cart.html">Add to Cart</a>
+            <a class="btn" href="wishlist.html">Add to Wishlist</a>
+          </div>
+          <p style="margin-top: 14px; color: var(--muted);">Ships in 2-3 business days. Includes care guide and eco packaging.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Konkan Krishi Vikas Pratishthani</h4>
+        <p>Quality plants and designed planters for elevated living.</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p><a href="contact.html">Contact Us</a><br /><a href="checkout.html">Shipping Info</a></p>
+      </div>
+      <div>
+        <h4>Need Help?</h4>
+        <p>support@konkankrishivikaspratishthani.com<br />+91 98760 11223</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/store.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Konkan Krishi Vikas Pratishthani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/store.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <span>Fast and secure checkout</span>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">🌿</span>
+        <span>Konkan Krishi Vikas Pratishthani</span>
+      </a>
+      <nav class="header-nav">
+        <a href="featured-products.html">Featured</a>
+        <a href="product-details.html">Product</a>
+        <a href="cart.html">Cart</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="checkout.html" class="active">Checkout</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-pill" href="wishlist.html">♡</a>
+        <a class="icon-pill" href="cart.html">🛒 2</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <h1 class="page-title">Checkout</h1>
+      <p class="page-subtitle">Complete your order with a smooth premium experience.</p>
+      <div class="grid grid-2">
+        <form class="auth-card" data-feedback>
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <textarea rows="3" placeholder="Street address"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Payment Method</label>
+            <select>
+              <option>Card</option>
+              <option>UPI</option>
+              <option>Cash on Delivery</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Place Order</button>
+          <p data-feedback-message></p>
+        </form>
+        <aside class="summary-card">
+          <h3>Order Summary</h3>
+          <div class="line"><span>Snake Plant ×2</span><span>₹2,598</span></div>
+          <div class="line"><span>Calathea ×1</span><span>₹1,699</span></div>
+          <div class="line total"><span>Total</span><span>₹4,496</span></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Konkan Krishi Vikas Pratishthani</h4>
+        <p>Secure, transparent, and delightful delivery for every order.</p>
+      </div>
+      <div>
+        <h4>Payments</h4>
+        <p>Credit card<br />UPI<br />COD</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <p>support@konkankrishivikaspratishthani.com<br />+91 98999 77889</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/store.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Konkan Krishi Vikas Pratishthani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/store.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <span>Store management panel</span>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">🌿</span>
+        <span>Konkan Krishi Vikas Pratishthani</span>
+      </a>
+      <nav class="header-nav">
+        <a href="admin.html" class="active">Dashboard</a>
+        <a href="featured-products.html">Products</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-pill" href="wishlist.html">♡</a>
+        <a class="icon-pill" href="cart.html">🛒 2</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <h1 class="page-title">Admin Dashboard</h1>
+      <p class="page-subtitle">Monitor inventory, orders, and customer activity.</p>
+      <div class="admin-grid">
+        <div class="admin-card">
+          <h3>Inventory</h3>
+          <div class="admin-stat"><strong>48</strong><br />Plants in stock</div>
+          <div class="admin-stat"><strong>12</strong><br />Low stock alerts</div>
+        </div>
+        <div class="admin-card">
+          <h3>Recent Orders</h3>
+          <table class="table">
+            <thead><tr><th>ID</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>#1048</td><td>Delivered</td></tr>
+              <tr><td>#1049</td><td>Pending</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Konkan Krishi Vikas Pratishthani Admin</h4>
+        <p>Manage your storefront from one elegant dashboard.</p>
+      </div>
+      <div>
+        <h4>Reports</h4>
+        <p>Sales • Inventory • Customers</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>admin@konkankrishivikaspratishthani.com<br />+91 99999 12345</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/store.js"></script>
+</body>
+</html>

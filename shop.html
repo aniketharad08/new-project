@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Konkan Krishi Vikas Pratishthani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .shop-page {
+      padding: 20px 0 60px;
+    }
+
+    .shop-hero {
+      margin: 20px 0 40px;
+      padding: 28px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(136, 192, 87, 0.16);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+      text-align: center;
+    }
+
+    .shop-hero h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .shop-hero p {
+      color: #c7d9bf;
+      margin: 0 auto;
+      max-width: 650px;
+    }
+
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .shop-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(136, 192, 87, 0.16);
+      border-radius: 22px;
+      padding: 18px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .shop-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 44px rgba(0, 0, 0, 0.22);
+    }
+
+    .shop-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 14px;
+    }
+
+    .wishlist-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      border: none;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.9);
+      color: #e63946;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .wishlist-btn:hover {
+      transform: scale(1.08);
+    }
+
+    .shop-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 6px;
+    }
+
+    .shop-card p {
+      color: #c7d9bf;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .shop-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      color: #a8df74;
+      font-weight: 600;
+    }
+
+    .shop-rating {
+      color: #ffd86a;
+      font-size: 0.9rem;
+    }
+
+    .shop-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .shop-actions .btn {
+      flex: 1;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .shop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .shop-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .shop-hero {
+        padding: 20px;
+      }
+
+      .shop-actions {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container shop-page">
+    <header>
+      <nav>
+        <a class="logo" href="index.html">🌱 Konkan Krishi Vikas Pratishthani</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a class="icon-btn" href="pages/cart.html" aria-label="View cart">🛍️</a>
+          <a class="icon-btn" href="pages/wishlist.html" aria-label="Wishlist">♡</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="shop-hero">
+      <h1>Discover Our Plant Collection</h1>
+      <p>Browse a curated range of low-maintenance, elegant, and premium indoor plants designed to bring freshness to every room.</p>
+    </section>
+
+    <section class="shop-grid" aria-label="Plant products">
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" alt="Snake Plant" />
+        <h3>Snake Plant</h3>
+        <div class="shop-meta">
+          <span>₹1,299</span>
+          <span class="shop-rating">★ 4.8</span>
+        </div>
+        <p>Air-purifying and perfect for bedrooms and offices.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" alt="Calathea" />
+        <h3>Calathea</h3>
+        <div class="shop-meta">
+          <span>₹1,699</span>
+          <span class="shop-rating">★ 4.9</span>
+        </div>
+        <p>Soft striped leaves that add calm elegance to interiors.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=600&q=80" alt="Monstera" />
+        <h3>Monstera</h3>
+        <div class="shop-meta">
+          <span>₹2,199</span>
+          <span class="shop-rating">★ 4.7</span>
+        </div>
+        <p>Statement greenery for living rooms and workspaces.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=600&q=80" alt="Peace Lily" />
+        <h3>Peace Lily</h3>
+        <div class="shop-meta">
+          <span>₹1,449</span>
+          <span class="shop-rating">★ 4.6</span>
+        </div>
+        <p>Elegant white blooms for bright, peaceful corners.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80" alt="ZZ Plant" />
+        <h3>ZZ Plant</h3>
+        <div class="shop-meta">
+          <span>₹1,159</span>
+          <span class="shop-rating">★ 4.8</span>
+        </div>
+        <p>Hardy and stylish, ideal for busy homes and offices.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80" alt="Rubber Plant" />
+        <h3>Rubber Plant</h3>
+        <div class="shop-meta">
+          <span>₹1,899</span>
+          <span class="shop-rating">★ 4.7</span>
+        </div>
+        <p>Glossy leaves that elevate minimalist interiors effortlessly.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=600&q=80" alt="Aloe Vera" />
+        <h3>Aloe Vera</h3>
+        <div class="shop-meta">
+          <span>₹899</span>
+          <span class="shop-rating">★ 4.5</span>
+        </div>
+        <p>Compact and easy to care for with striking sculptural form.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" alt="Bird of Paradise" />
+        <h3>Bird of Paradise</h3>
+        <div class="shop-meta">
+          <span>₹2,499</span>
+          <span class="shop-rating">★ 4.9</span>
+        </div>
+        <p>Bold tropical style that makes a dramatic statement.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80" alt="Fiddle Leaf Fig" />
+        <h3>Fiddle Leaf Fig</h3>
+        <div class="shop-meta">
+          <span>₹2,799</span>
+          <span class="shop-rating">★ 4.8</span>
+        </div>
+        <p>Large sculptural leaves for elegant, modern interiors.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1446071103084-c257b5f70672?auto=format&fit=crop&w=600&q=80" alt="Jade Plant" />
+        <h3>Jade Plant</h3>
+        <div class="shop-meta">
+          <span>₹1,049</span>
+          <span class="shop-rating">★ 4.6</span>
+        </div>
+        <p>Low-maintenance succulent with rich green charm.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="shop-card">
+        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=600&q=80" alt="Pothos" />
+        <h3>Pothos</h3>
+        <div class="shop-meta">
+          <span>₹999</span>
+          <span class="shop-rating">★ 4.7</span>
+        </div>
+        <p>Trailing greenery that looks great in shelves and corners.</p>
+        <div class="shop-actions">
+          <a class="btn" href="pages/product-details.html">View Details</a>
+          <a class="btn" href="pages/cart.html">Add to Cart</a>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
