@@ -34,41 +34,35 @@
     </header>
 
     <main class="page-shell">
-      <h1 class="page-title">Featured Products</h1>
-      <p class="page-subtitle">Premium indoor greenery curated for modern homes and workspaces.</p>
+      <h1 class="page-title">Shop Collection</h1>
+      <p class="page-subtitle">Browse premium plants, planters and seed kits designed for every green corner.</p>
 
-      <div class="grid grid-3">
-        <article class="card">
-          <span class="badge">Best Seller</span>
-          <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" alt="Snake Plant" />
-          <h3>Snake Plant</h3>
-          <p>Low maintenance and elegant for your living room.</p>
-          <div class="price-row">
-            <span class="price-tag">₹1,299</span>
-            <a class="btn btn-primary" href="product-details.html">View</a>
-          </div>
-        </article>
-        <article class="card">
-          <span class="badge">New</span>
-          <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" alt="Calathea" />
-          <h3>Calathea</h3>
-          <p>Soft leaves and a luminous finish for premium interiors.</p>
-          <div class="price-row">
-            <span class="price-tag">₹1,699</span>
-            <a class="btn btn-primary" href="product-details.html">View</a>
-          </div>
-        </article>
-        <article class="card">
-          <span class="badge">Eco Pick</span>
-          <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=600&q=80" alt="Monstera" />
-          <h3>Monstera</h3>
-          <p>Statement greenery for airy spaces and offices.</p>
-          <div class="price-row">
-            <span class="price-tag">₹2,199</span>
-            <a class="btn btn-primary" href="product-details.html">View</a>
-          </div>
-        </article>
-      </div>
+      <section class="catalog-toolbar" aria-label="Shop filters">
+        <label class="search-box" for="productSearch">
+          <span aria-hidden="true">🔍</span>
+          <input id="productSearch" type="search" placeholder="Search products" />
+        </label>
+
+        <select id="sortSelect" class="sort-select" aria-label="Sort products">
+          <option value="featured">Sort by</option>
+          <option value="price-asc">Price Low to High</option>
+          <option value="price-desc">Price High to Low</option>
+          <option value="name-asc">Name A-Z</option>
+        </select>
+
+        <div class="filter-pills" role="group" aria-label="Filter products by category">
+          <button class="pill-btn active" type="button" data-category="all">All</button>
+          <button class="pill-btn" type="button" data-category="Indoor">Indoor</button>
+          <button class="pill-btn" type="button" data-category="Outdoor">Outdoor</button>
+          <button class="pill-btn" type="button" data-category="Flowering">Flowering</button>
+          <button class="pill-btn" type="button" data-category="Succulents">Succulents</button>
+          <button class="pill-btn" type="button" data-category="Pots">Pots</button>
+          <button class="pill-btn" type="button" data-category="Seeds">Seeds</button>
+        </div>
+      </section>
+
+      <div id="productGrid" class="grid grid-3" aria-live="polite"></div>
+      <p id="emptyState" class="empty-state hidden">No products match your search. Try another keyword or category.</p>
     </main>
   </div>
 

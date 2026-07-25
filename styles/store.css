@@ -90,6 +90,70 @@ button, input, select, textarea { font: inherit; }
 .page-title { font-size: 2rem; margin-bottom: 8px; }
 .page-subtitle { color: var(--muted); margin-bottom: 24px; }
 
+.catalog-toolbar {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+  margin: 0 0 24px; padding: 16px; border-radius: 20px; background: rgba(255,255,255,0.06); border: 1px solid var(--border);
+}
+
+.search-box {
+  display: flex; align-items: center; gap: 8px; flex: 1 1 240px; min-width: 220px;
+  padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid var(--border);
+}
+
+.search-box input {
+  border: none; outline: none; background: transparent; color: var(--text); width: 100%;
+}
+
+.sort-select {
+  min-width: 180px; padding: 10px 14px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.06); color: var(--text);
+}
+
+.filter-pills {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+
+.pill-btn {
+  border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: var(--text); padding: 8px 12px; border-radius: 999px; cursor: pointer;
+}
+
+.pill-btn.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong)); color: #08110b; border-color: transparent;
+}
+
+.product-card {
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+.product-card img {
+  height: 190px; object-fit: cover; border-radius: 16px;
+}
+
+.product-card .price-tag {
+  font-size: 1rem;
+}
+
+.product-rating {
+  display: flex; align-items: center; gap: 6px; color: #ffd36f; font-size: 0.9rem;
+}
+
+.product-description {
+  color: var(--muted); font-size: 0.9rem; min-height: 44px;
+}
+
+.product-card .card-actions {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;
+}
+
+.product-card .add-to-cart.is-added {
+  background: rgba(136,192,87,0.2); color: #d7ff9c;
+}
+
+.empty-state {
+  margin-top: 16px; padding: 16px; text-align: center; color: var(--muted); border: 1px dashed var(--border); border-radius: 16px;
+}
+
+.hidden { display: none !important; }
+
 .product-detail { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: start; }
 .product-gallery img { border-radius: 24px; height: 360px; object-fit: cover; }
 .detail-card, .summary-card, .auth-card, .admin-card, .contact-card { background: var(--panel); border: 1px solid var(--border); border-radius: 24px; padding: 22px; box-shadow: var(--shadow); }
