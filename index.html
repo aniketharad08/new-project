@@ -3,322 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Konkan Krishi Vikas Pratishthan - Plant Store Landing Page</title>
+  <title>Konkan Krishi Vikas Pratishthan | Premium Gardening Store</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="offer-banner">
+    Free delivery across Konkan for orders above ₹999 • Fresh seedlings, planters and garden essentials every week.
+  </div>
 
-  <div class="container">
-    <!-- ================= NAVIGATION ================= -->
-    <header>
-      <nav>
-        <div class="logo">🌱 Konkan Krishi Vikas Pratishthan </div>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Konkan Krishi Vikas Pratishthan home">
+          <span class="brand-mark">🌿</span>
+          <span class="brand-text">
+            <strong>Konkan Krishi Vikas Pratishthan</strong>
+            <small>Premium Garden & Nursery</small>
+          </span>
+        </a>
+
         <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="pages/featured-products.html">Shop</a></li>
-          <li><a href="#plant-types">Plant Types ▾</a></li>
-          <li class="dropdown">
-            <button class="dropdown-toggle" type="button" aria-expanded="false">More ▾</button>
-            <ul class="dropdown-menu">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="pages/wishlist.html">Wishlist</a></li>
-              <li><a href="pages/cart.html">Cart</a></li>
-              <li><a href="pages/login.html">Login</a></li>
-            </ul>
-          </li>
+          <li><a href="#categories">Categories</a></li>
           <li><a href="pages/contact.html">Contact</a></li>
         </ul>
-        <div class="nav-icons">
-          <a class="icon-btn" href="pages/cart.html" aria-label="View cart">🛍️</a>
-          <button class="icon-btn search-toggle" type="button" aria-label="Search plants">🔍</button>
+
+        <div class="nav-actions">
+          <label class="search-pill" for="site-search">
+            <span aria-hidden="true">🔍</span>
+            <input id="site-search" type="search" placeholder="Search plants">
+          </label>
+          <a class="icon-button" href="pages/cart.html" aria-label="Go to cart">🛍️</a>
         </div>
       </nav>
-      <div class="search-panel" id="searchPanel">
-        <input type="text" id="searchInput" placeholder="Search plant names..." aria-label="Search plants">
-      </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- ================= HERO SECTION ================= -->
-    <section class="hero" id="home">
+  <main id="home">
+    <section class="hero container">
       <div class="hero-content">
-        <h1>Breath Natural</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="hero-buttons">
-          <a class="btn" href="pages/featured-products.html">Explore</a>
-          <a class="btn" href="pages/contact.html">▶ Contact Us</a>
+        <p class="eyebrow">Curated for modern homes, terraces & verandas</p>
+        <h1>Grow a greener, calmer life with premium plants.</h1>
+        <p>Discover rare foliage, fragrant herbs, and crafted planters designed to bring nature indoors with effortless elegance.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="pages/featured-products.html">Shop now</a>
+          <a class="btn btn-secondary" href="pages/contact.html">Book a visit</a>
         </div>
-        
-        <div class="glass-card review-badge">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Reviewer">
+        <div class="hero-stats">
           <div>
-            <strong style="font-size: 0.85rem;">alena Patel</strong>
-            <div class="stars">★★★★★</div>
-            <p style="font-size: 0.7rem; color: #aaa; margin: 0;">Lorem ipsum dolor sit amet, consectetur...</p>
+            <strong>500+</strong>
+            <span>plant varieties</span>
+          </div>
+          <div>
+            <strong>4.9/5</strong>
+            <span>happy gardeners</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>support</span>
           </div>
         </div>
       </div>
 
-      <div class="glass-card hero-card">
-        <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=500&q=80" alt="Trendy Plant">
-        <p class="hero-card-tag">Trendy House Plant</p>
-        <h3>Calathea plant</h3>
-        <a class="btn" href="pages/product-details.html">Buy Now</a>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80" alt="Premium indoor greenery in a bright room">
+        <div class="hero-card-body">
+          <span class="hero-badge">Season’s pick</span>
+          <h3>Monstera deliciosa</h3>
+          <p>Air-purifying foliage with sculptural leaves.</p>
+          <a class="btn btn-primary" href="pages/product-details.html">View plant</a>
+        </div>
       </div>
     </section>
 
-    <!-- ================= TRENDY PLANTS ================= -->
-    <section id="plant-types">
-      <h2 class="section-title">Our Trendy plants</h2>
-      
-      <div class="trendy-grid">
-      <!-- Card 1 -->
-      <div class="glass-card trendy-card" data-name="for small decs ai plat">
-        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=500&q=80" alt="Plant">
-        <div class="trendy-details">
-          <h3>For Small Decs Ai Plat</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <div class="price">Rs. 599/-</div>
-          <div class="action-row">
-            <a class="btn" href="#about" data-scroll-target="about">Explore</a>
-            <a class="btn btn-icon" href="#contact" data-scroll-target="contact" aria-label="Order this plant">🛍️</a>
-          </div>
+    <section class="container section" id="categories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Featured categories</p>
+          <h2>Curated collections for every corner of your home</h2>
         </div>
+        <a class="text-link" href="pages/featured-products.html">See all collections</a>
       </div>
 
-      <!-- Card 2 -->
-      <div class="glass-card trendy-card" data-name="for fresh decs ai plat">
-        <div class="trendy-details">
-          <h3>For Fresh Decs Ai Plat</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <div class="price">Rs. 579/-</div>
-          <div class="action-row">
-            <a class="btn" href="#services" data-scroll-target="services">Explore</a>
-            <a class="btn btn-icon" href="#contact" data-scroll-target="contact" aria-label="Order this plant">🛍️</a>
+      <div class="category-grid">
+        <article class="card category-card">
+          <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?auto=format&fit=crop&w=600&q=80" alt="Indoor plants for living rooms">
+          <div>
+            <h3>Indoor greenery</h3>
+            <p>Low-maintenance statement plants for calm interiors.</p>
           </div>
-        </div>
-        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=500&q=80" alt="Plant">
-      </div>
+        </article>
+
+        <article class="card category-card">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80" alt="Outdoor plants for terraces">
+          <div>
+            <h3>Terrace favourites</h3>
+            <p>Bright foliage and fragrant herbs for balcony gardens.</p>
+          </div>
+        </article>
+
+        <article class="card category-card">
+          <img src="https://images.unsplash.com/photo-1487077705737-d5f1a4d0b2d7?auto=format&fit=crop&w=600&q=80" alt="Decorative planters and accessories">
+          <div>
+            <h3>Planters & décor</h3>
+            <p>Handcrafted pots and earthy accessories to complete the look.</p>
+          </div>
+        </article>
+
+        <article class="card category-card">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80" alt="Kitchen herbs and grow kits">
+          <div>
+            <h3>Herbs & grow kits</h3>
+            <p>Fresh kitchen herbs and beginner-friendly starter kits.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- ================= TOP SELLING ================= -->
-    <h2 class="section-title">Our Top Selling</h2>
-    
-    <div class="grid-3">
-      <!-- Plant Item 1 -->
-      <div class="glass-card plant-card" data-name="calathea plant">
-        <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=400&q=80" alt="Calathea plant">
-        <h4>Calathea plant</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <div class="plant-card-footer">
-          <span class="price" style="margin:0;">Rs. 359/-</span>
-          <a class="btn btn-icon" href="#contact" data-scroll-target="contact" aria-label="Order this plant">🛍️</a>
+    <section class="container section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Best sellers</p>
+          <h2>Most loved plants by our garden community</h2>
+        </div>
+        <a class="text-link" href="pages/featured-products.html">Explore all plants</a>
+      </div>
+
+      <div class="product-grid">
+        <article class="card product-card">
+          <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" alt="Snake plant in a ceramic pot">
+          <div class="product-content">
+            <h3>Snake Plant</h3>
+            <p>Architectural leaves that thrive effortlessly.</p>
+            <div class="product-meta">
+              <span>₹1,199</span>
+              <a class="btn btn-secondary" href="pages/product-details.html">Add to cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451afbe?auto=format&fit=crop&w=600&q=80" alt="Peace lily with white bloom">
+          <div class="product-content">
+            <h3>Peace Lily</h3>
+            <p>Elegant foliage with soft blooms and easy care.</p>
+            <div class="product-meta">
+              <span>₹899</span>
+              <a class="btn btn-secondary" href="pages/product-details.html">Add to cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" alt="Money plant climbing a wall">
+          <div class="product-content">
+            <h3>Money Plant</h3>
+            <p>Classic indoor charm with polished green vines.</p>
+            <div class="product-meta">
+              <span>₹749</span>
+              <a class="btn btn-secondary" href="pages/product-details.html">Add to cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80" alt="Aromatic basil herb planter">
+          <div class="product-content">
+            <h3>Herb Starter Set</h3>
+            <p>Fresh basil, mint and coriander in one set.</p>
+            <div class="product-meta">
+              <span>₹649</span>
+              <a class="btn btn-secondary" href="pages/product-details.html">Add to cart</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section about-band">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Why choose us</p>
+          <h2>Trusted guidance for growing your green corner</h2>
         </div>
       </div>
-      <!-- Plant Item 2 -->
-      <div class="glass-card plant-card" data-name="calathea plant">
-        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=400&q=80" alt="Calathea plant">
-        <h4>Calathea plant</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <div class="plant-card-footer">
-          <span class="price" style="margin:0;">Rs. 359/-</span>
-          <button class="btn btn-icon">🛍️</button>
+
+      <div class="feature-grid">
+        <article class="card feature-card">
+          <h3>Expert curation</h3>
+          <p>Every plant is selected for beauty, resilience, and long-term enjoyment.</p>
+        </article>
+        <article class="card feature-card">
+          <h3>Care-first support</h3>
+          <p>Get guidance on light, watering, and seasonal care from our nursery team.</p>
+        </article>
+        <article class="card feature-card">
+          <h3>Seamless delivery</h3>
+          <p>Healthy plants packed with care and delivered safely across Konkan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Customer reviews</p>
+          <h2>Gardeners love the experience</h2>
         </div>
       </div>
-      <!-- Plant Item 3 -->
-      <div class="glass-card plant-card" data-name="calathea plant">
-        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=400&q=80" alt="Calathea plant">
-        <h4>Calathea plant</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <div class="plant-card-footer">
-          <span class="price" style="margin:0;">Rs. 359/-</span>
-          <a class="btn btn-icon" href="#contact" data-scroll-target="contact" aria-label="Order this plant">🛍️</a>
-        </div>
+
+      <div class="review-grid">
+        <article class="card review-card">
+          <p>“The plants arrived healthy and beautifully packed. The team’s care advice made it easy to settle them in.”</p>
+          <div>
+            <strong>Aditi K.</strong>
+            <span>★★★★★</span>
+          </div>
+        </article>
+        <article class="card review-card">
+          <p>“A premium store with the most thoughtful collection. My balcony now feels like a resort.”</p>
+          <div>
+            <strong>Rohan S.</strong>
+            <span>★★★★★</span>
+          </div>
+        </article>
+        <article class="card review-card">
+          <p>“Professional, warm, and inspiring. I found the perfect planters and herbs for my kitchen.”</p>
+          <div>
+            <strong>Meera D.</strong>
+            <span>★★★★★</span>
+          </div>
+        </article>
       </div>
-      <!-- Plant Item 4 -->
-      <div class="glass-card plant-card" data-name="calathea plant">
-        <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=400&q=80" alt="Calathea plant">
-        <h4>Calathea plant</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <div class="plant-card-footer">
-          <span class="price" style="margin:0;">Rs. 359/-</span>
-          <button class="btn btn-icon">🛍️</button>
-        </div>
+    </section>
+
+    <section class="container section newsletter-section">
+      <div>
+        <p class="eyebrow">Stay updated</p>
+        <h2>Join our garden newsletter</h2>
+        <p>Get seasonal offers, fresh arrivals, and easy care tips straight to your inbox.</p>
       </div>
-      <!-- Plant Item 5 -->
-      <div class="glass-card plant-card" data-name="calathea plant">
-        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=400&q=80" alt="Calathea plant">
-        <h4>Calathea plant</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <div class="plant-card-footer">
-          <span class="price" style="margin:0;">Rs. 359/-</span>
-          <a class="btn btn-icon" href="#contact" data-scroll-target="contact" aria-label="Order this plant">🛍️</a>
-        </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">🌿</span>
+          <span class="brand-text">
+            <strong>Konkan Krishi Vikas Pratishthan</strong>
+            <small>Premium Garden & Nursery</small>
+          </span>
+        </a>
+        <p>Handpicked plants, planters and wholesome garden advice for modern homes.</p>
       </div>
-      <!-- Plant Item 6 -->
-      <div class="glass-card plant-card" data-name="calathea plant">
-        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=400&q=80" alt="Calathea plant">
-        <h4>Calathea plant</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <div class="plant-card-footer">
-          <span class="price" style="margin:0;">Rs. 359/-</span>
-          <button class="btn btn-icon">🛍️</button>
-        </div>
+
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/featured-products.html">Shop</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/wishlist.html">Wishlist</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Visit us</h3>
+        <p>Konkan region • Mon-Sat: 9am to 7pm</p>
+        <p>hello@konkankrishi.com</p>
       </div>
     </div>
-
-    <section id="about" class="glass-card more-card">
-      <div>
-        <h3>More About Our Plant Collection</h3>
-        <p>Explore hand-picked indoor greenery, seasonal offers, and care tips designed to bring freshness to every space.</p>
-      </div>
-      <a class="btn" href="#gallery" data-scroll-target="gallery">See More</a>
-    </section>
-
-    <section id="services" class="glass-card more-card">
-      <div>
-        <h3>Our Services</h3>
-        <p>From plant selection to delivery and care guidance, we offer everything needed to keep your space fresh and green.</p>
-      </div>
-      <a class="btn" href="#contact" data-scroll-target="contact">View Services</a>
-    </section>
-
-    <section id="gallery" class="glass-card more-card">
-      <div>
-        <h3>Plant Gallery</h3>
-        <p>Browse our favorite indoor plants, decorative planters, and seasonal collections in one place.</p>
-      </div>
-      <a class="btn" href="#gallery" data-scroll-target="gallery">Open Gallery</a>
-    </section>
-
-    <section id="faq" class="glass-card more-card">
-      <div>
-        <h3>Frequently Asked Questions</h3>
-        <p>Find quick answers about shipping, plant care, returns, and the best options for your home.</p>
-      </div>
-      <a class="btn" href="#faq" data-scroll-target="faq">Read FAQs</a>
-    </section>
-
-    <!-- ================= CUSTOMER REVIEWS ================= -->
-    <h2 class="section-title">Customer Review</h2>
-    
-    <div class="grid-3">
-      <div class="glass-card review-card">
-        <div class="reviewer">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Maxn Raval">
-          <div class="reviewer-info">
-            <h4>Maxn Raval</h4>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-      </div>
-
-      <div class="glass-card review-card">
-        <div class="reviewer">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="venely k">
-          <div class="reviewer-info">
-            <h4>venely k</h4>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-      </div>
-
-      <div class="glass-card review-card">
-        <div class="reviewer">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Lii thakur">
-          <div class="reviewer-info">
-            <h4>Lii thakur</h4>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-      </div>
-    </div>
-
-    <!-- ================= BEST O2 SECTION ================= -->
-    <h2 class="section-title">Our Best o2</h2>
-
-    <div class="glass-card o2-card">
-      <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=500&q=80" alt="Best O2 Plant">
-      <div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 20px;">We Have Small And Best O2 Plants Collection's</h3>
-        <p style="color: #aaa; font-size: 0.85rem; margin-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-        <p style="color: #aaa; font-size: 0.85rem; margin-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <a class="btn" href="#plant-types" data-scroll-target="plant-types">Explore</a>
-      </div>
-    </div>
-
-    <!-- ================= FOOTER ================= -->
-    <footer id="contact">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="logo">🌱 Konkan Krishi Vikas Pratishthan.</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <div class="footer-links">
-          <h4>Quick Link's</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Type's Of plant's</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-subscribe">
-          <h4>For Every Update.</h4>
-          <form class="subscribe-box" id="subscribeForm">
-            <input type="email" id="subscribeEmail" placeholder="Enter Email" required>
-            <button type="submit">SUBSCRIBE</button>
-          </form>
-          <p class="form-message" id="formMessage" aria-live="polite"></p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="social-links">
-          <span>FB</span>
-          <span>TW</span>
-          <span>LI</span>
-        </div>
-        <div>Konkan Krishi Vikas Pratishthan © all right reserve</div>
-      </div>
-    </footer>
-  </div>
+  </footer>
 
   <script>
-    // Dropdown interaction for the More menu.
-    const dropdownToggle = document.querySelector('.dropdown-toggle');
-    const dropdown = document.querySelector('.dropdown');
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    if (dropdownToggle && dropdown) {
-      dropdownToggle.addEventListener('click', (event) => {
-        event.stopPropagation();
-        const isOpen = dropdown.classList.toggle('active');
-        dropdownToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-
-      document.addEventListener('click', (event) => {
-        if (!dropdown.contains(event.target)) {
-          dropdown.classList.remove('active');
-          dropdownToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
-    }
-
-    // Mobile hamburger menu for smaller screens.
     if (menuToggle && navLinks) {
       menuToggle.addEventListener('click', () => {
         const isOpen = navLinks.classList.toggle('active');
@@ -326,101 +298,16 @@
         menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
 
-      navLinks.querySelectorAll('a, .dropdown-toggle').forEach((item) => {
-        item.addEventListener('click', () => {
-          if (window.innerWidth <= 900) {
+      navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 760) {
             navLinks.classList.remove('active');
             menuToggle.classList.remove('active');
             menuToggle.setAttribute('aria-expanded', 'false');
           }
         });
       });
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth > 900) {
-          navLinks.classList.remove('active');
-          menuToggle.classList.remove('active');
-          menuToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
-    }
-
-    // Search interaction for plant cards.
-    const searchToggle = document.querySelector('.search-toggle');
-    const searchPanel = document.getElementById('searchPanel');
-    const searchInput = document.getElementById('searchInput');
-    const searchableItems = Array.from(document.querySelectorAll('.plant-card, .trendy-card'));
-    const searchStatus = document.createElement('p');
-    searchStatus.className = 'search-status';
-    searchPanel?.appendChild(searchStatus);
-
-    searchableItems.forEach((item) => {
-      if (!item.getAttribute('data-name')) {
-        item.setAttribute('data-name', item.textContent.toLowerCase());
-      }
-    });
-
-    if (searchToggle && searchPanel && searchInput) {
-      searchToggle.addEventListener('click', (event) => {
-        event.stopPropagation();
-        searchPanel.classList.toggle('active');
-        if (searchPanel.classList.contains('active')) {
-          searchInput.focus();
-        }
-      });
-
-      document.addEventListener('click', (event) => {
-        if (!searchPanel.contains(event.target) && !searchToggle.contains(event.target)) {
-          searchPanel.classList.remove('active');
-        }
-      });
-
-      searchInput.addEventListener('input', (event) => {
-        const term = event.target.value.trim().toLowerCase();
-        let visibleCount = 0;
-
-        searchableItems.forEach((item) => {
-          const name = (item.getAttribute('data-name') || item.textContent).toLowerCase();
-          const matches = name.includes(term);
-          item.classList.toggle('hidden', !matches);
-          if (matches) visibleCount += 1;
-        });
-
-        searchStatus.textContent = term
-          ? `${visibleCount} plant${visibleCount === 1 ? '' : 's'} match${visibleCount === 1 ? '' : 'es'} your search.`
-          : 'Search for featured plants by name.';
-      });
-    }
-
-    // Scroll-to-section behavior for buttons that are not regular links.
-    document.querySelectorAll('[data-scroll-target]').forEach((button) => {
-      button.addEventListener('click', (event) => {
-        const targetId = button.getAttribute('data-scroll-target');
-        const target = document.getElementById(targetId);
-
-        if (target) {
-          event.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // Newsletter subscription form.
-    const subscribeForm = document.getElementById('subscribeForm');
-    const subscribeEmail = document.getElementById('subscribeEmail');
-    const formMessage = document.getElementById('formMessage');
-
-    if (subscribeForm && subscribeEmail && formMessage) {
-      subscribeForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const email = subscribeEmail.value.trim();
-        formMessage.textContent = email
-          ? `Thanks! ${email} has been subscribed to our plant updates.`
-          : 'Please enter a valid email address.';
-        subscribeForm.reset();
-      });
     }
   </script>
-
 </body>
 </html>
