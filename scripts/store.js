@@ -109,3 +109,25 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
   }
 });
+                                                                                                                                                                                                                          
+// Paste Add to cart code here
+const addToCartBtn = document.getElementById("addToCartBtn");
+
+if (addToCartBtn) {
+  addToCartBtn.addEventListener("click", () => {
+    let cartCount = Number(localStorage.getItem("cartCount")) || 0;
+
+    cartCount++;
+
+    localStorage.setItem("cartCount", cartCount);
+
+    const cartIcon = document.querySelector(".icon-pill");
+    if (cartIcon) {
+      cartIcon.innerHTML = "🛒 " + cartCount;
+    }
+
+    alert("Plant added to cart!");
+  });
+}
+
+
