@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const emptyState = document.getElementById('emptyState');
 
   const products = [
-    { id: 1, name: 'Desert Rose', category: 'Indoor', price: 1299, rating: 4.8, description: 'Low-maintenance elegance for living rooms and offices.', image: 'https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80' },
+    { id: 1, name: 'Desert Rose', category: 'Indoor', price: 1299, rating: 4.8, description: 'Low-maintenance elegance for living rooms and offices.', image: "../Desert Rose.jpeg" },
     { id: 2, name: 'Dwarf Snake Plants', category: 'Indoor', price: 1699, rating: 4.7, description: 'Soft striped leaves with a premium sculptural finish.', image: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80' },
     { id: 3, name: 'Ficus Ginseng bonsai', category: 'Indoor', price: 2199, rating: 4.9, description: 'Statement greenery for airy interiors and modern spaces.', image: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=600&q=80' },
     { id: 4, name: 'Aglaonema Super White', category: 'Indoor', price: 1499, rating: 4.6, description: 'Glossy upright leaves that thrive with minimal care.', image: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80' },
