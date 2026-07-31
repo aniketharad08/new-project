@@ -164,8 +164,8 @@ button, input, select, textarea { font: inherit; }
 }
 
 .product-gallery img {
-    width: 320px;
-    height: 360px;
+    width: 420px;
+    height: 500px;
     object-fit: contain;
     object-position: center;
     display: block;
